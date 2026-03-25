@@ -14,6 +14,7 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#quiz">Quiz</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -26,11 +27,11 @@
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>HTML & CSS</li>
+            <li>HTML &amp; CSS</li>
             <li>JavaScript</li>
             <li>React</li>
             <li>Node.js</li>
-            <li>Git & GitHub</li>
+            <li>Git &amp; GitHub</li>
         </ul>
     </section>
 
@@ -44,6 +45,39 @@
             <h3>VACCINATION SYSTEM</h3>
             <p>The Vaccination System is a web-based application with a C backend, using HTML, CSS, and JavaScript for the frontend to provide an intuitive and accessible interface for users and healthcare administrators. This system is designed to streamline the entire vaccination process, from user registration and appointment scheduling to vaccine inventory tracking and record maintenance. By combining a structured backend with a user-friendly frontend, it ensures both data integrity and ease of use.</p>
         </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Quick JavaScript Quiz</h2>
+        <p>Test your fundamentals. Choose one answer for each question and submit to see your score.</p>
+
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. Which keyword declares a block-scoped variable in JavaScript?</p>
+                <label><input type="radio" name="q1" value="a" required> var</label>
+                <label><input type="radio" name="q1" value="b"> let</label>
+                <label><input type="radio" name="q1" value="c"> function</label>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. What does <code>===</code> check?</p>
+                <label><input type="radio" name="q2" value="a" required> Value only</label>
+                <label><input type="radio" name="q2" value="b"> Type only</label>
+                <label><input type="radio" name="q2" value="c"> Value and type</label>
+            </div>
+
+            <div class="quiz-question">
+                <p>3. Which array method adds an item to the end of an array?</p>
+                <label><input type="radio" name="q3" value="a" required> push()</label>
+                <label><input type="radio" name="q3" value="b"> shift()</label>
+                <label><input type="radio" name="q3" value="c"> unshift()</label>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+            <button type="button" id="resetQuiz">Reset Quiz</button>
+        </form>
+
+        <p id="quizResult" class="quiz-result" aria-live="polite"></p>
     </section>
 
     <section id="contact">

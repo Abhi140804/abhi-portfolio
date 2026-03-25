@@ -33,12 +33,43 @@ h2 {
     padding-bottom: 5px;
 }
 
+.quiz-question {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+}
+
+.quiz-question p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 6px 0;
+}
+
+#quizForm button {
+    margin-right: 8px;
+}
+
+.quiz-result {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #contactForm {
     display: flex;
     flex-direction: column;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input,
+#contactForm textarea,
+#contactForm button,
+#quizForm button {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
@@ -46,13 +77,11 @@ h2 {
     border-radius: 4px;
 }
 
-#contactForm button {
-    padding: 10px;
-    font-size: 16px;
+#contactForm button,
+#quizForm button {
     background-color: #333;
     color: #fff;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
